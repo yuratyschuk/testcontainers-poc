@@ -18,6 +18,7 @@ public abstract class TestContainerConfiguration {
     private static final String POSTGRES_VERSION = "postgres:12.7";
 
     private static final String IMPORT_DATA_FILE = "import.sql";
+
     private static final PostgreSQLContainer<?> postgresContainer = new PostgreSQLContainer<>(POSTGRES_VERSION)
             .withInitScript(IMPORT_DATA_FILE);
 
